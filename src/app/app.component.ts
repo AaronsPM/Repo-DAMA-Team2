@@ -4,10 +4,11 @@ import { ContactoComponent } from './component/contacto/contacto.component';
 import { LoginComponent } from './component/login/login.component';
 import { RegisterComponent } from './component/register/register.component';
 import { PayComponent } from './component/pay/pay.component';
+import { ProductosComponent } from './component/productos/productos.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ContactoComponent, PayComponent, LoginComponent, RegisterComponent],
+  imports: [RouterOutlet, ContactoComponent, PayComponent, LoginComponent, RegisterComponent, ProductosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
