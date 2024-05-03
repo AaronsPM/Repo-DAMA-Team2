@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 html {
 	scroll-behavior: smooth;
 }
@@ -20,15 +22,8 @@ body {
     margin: auto;
     bottom: -100px;
 }
-#about {
-	position: relative;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-	flex-direction: row;
-	width: 100%;
-	height: 100vh;
+#about-us {
+	margin-top: 20%;
 }
 .content {
 	width: 80%;
@@ -49,3 +44,29 @@ body {
 #carouselExample img {
     margin: auto;
 }
+.row {
+    padding: 20px;
+    justify-content: space-between;
+}
+.col {
+    padding: 10px;
+    margin: 20px;
+}
+
+#about-us-title {
+	font-family: Ubuntu;
+	font-size: 50px;
+	font-weight: bold;
+}
+.container {
+	border-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.container h2 {
+	font-family: Ubuntu;
+	font-size: 30px;
+}
+
