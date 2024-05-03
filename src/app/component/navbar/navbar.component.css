@@ -1,5 +1,7 @@
 .navbar {
     padding: 0;
+    position: fixed;
+    margin-top: 4%;
   }
   
   .navbar ul {
@@ -8,7 +10,6 @@
     display: flex;
     list-style: none;
     align-items: center;
-    margin-left: auto;
   }
   .navbar li {
     position: relative;
