@@ -2,4 +2,21 @@ body {
     background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+section {
+    background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+>>>>>>> carlos-work
