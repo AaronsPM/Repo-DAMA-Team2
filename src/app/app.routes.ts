@@ -5,11 +5,13 @@
     import { CatalogoComponent } from './component/catalogo/catalogo.component';
     import { LoginComponent } from './component/login/login.component';
     import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RegisterComponent } from './component/register/register.component';
 
     export const routes: Routes = [
         { path: 'home', component: HomeComponent},
         { path: 'contacto', component: ContactoComponent},
         { path: 'productos', component: ProductosComponent},
+        { path: 'registro', component: RegisterComponent },
         { path: 'catalogo', component: CatalogoComponent},
         { path: 'inicio', component: LoginComponent},
         { path: '', redirectTo: '/home', pathMatch: 'full'},
