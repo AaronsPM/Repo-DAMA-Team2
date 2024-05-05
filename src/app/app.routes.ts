@@ -6,12 +6,16 @@
     import { LoginComponent } from './component/login/login.component';
     import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RegisterComponent } from './component/register/register.component';
+import { PayComponent } from './component/pay/pay.component';
+import { CarritoComponent } from './component/carrito/carrito.component';
 
     export const routes: Routes = [
         { path: 'home', component: HomeComponent},
         { path: 'contacto', component: ContactoComponent},
         { path: 'productos', component: ProductosComponent},
         { path: 'registro', component: RegisterComponent },
+        { path: 'pago', component: PayComponent},
+        { path: 'carrito', component: CarritoComponent},
         { path: 'catalogo', component: CatalogoComponent},
         { path: 'inicio', component: LoginComponent},
         { path: '', redirectTo: '/home', pathMatch: 'full'},

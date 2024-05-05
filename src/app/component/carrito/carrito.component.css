@@ -1,0 +1,17 @@
+.background-image {
+    background-image: url('../../../assets/fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+
+.container {
+    padding: 100px; 
+}
+
+.ui-w-40 {
+    width: 100px;
+}
+
+
+
+
