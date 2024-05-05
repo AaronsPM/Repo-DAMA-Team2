@@ -70,3 +70,7 @@ body {
 	font-size: 30px;
 }
 
+.slide img{
+	height: 70vh;
+	width: 100vh;
+}
