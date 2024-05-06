@@ -1,31 +1,95 @@
-<section class="min-vh-100 d-flex justify-content-center align-items-center" style="background-color: #508bfc;">
-    <div class="card shadow-lg p-4" style="border-radius: 1rem;">
-      <h3 class="text-center mb-5">Pago</h3>
-  
-      <form>
-        <div class="mb-4">
-            <input type="number" id="typeEmailX-2" class="form-control form-control-lg" placeholder="Numero de tarjeta" />
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del pago</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+body {
+    background-image: url('../../../assets/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
-        <div class="mb-4 row">
-          <div class="col">
-            <input type="date" id="typeNombre-2" class="form-control form-control-lg" placeholder="Fecha" />
-          </div>
-          <div class="col">
-            <input type="number" id="typeApellido-2" class="form-control form-control-lg" placeholder="CVV" />
-          </div>
-        </div>
-  
-  
-        <div class="mb-4 form-check">
-          <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-          <label class="form-check-label" for="form1Example3"> Recordar tu contraseña </label>
-        </div>
-  
-        <button class="btn btn-primary btn-lg btn-block mb-3" type="submit">Entrar</button>
-  
+    
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-      </form>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .panel {
+            max-width: 400px; 
+            margin-right: 20px; 
+        }
+        .cc-img {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <h3 class="text-center">Detalles del pago</h3>
+                    <img class="img-responsive cc-img" src="https://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                </div>
+            </div>
+            <div class="panel-body">
+              
+                <form role="form">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>TARJETA DE CREDITO</label>
+                                <div class="input-group">
+                                    <input type="tel" class="form-control" placeholder="Numero de tarjeta" />
+                                    <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label><span class="hidden-xs">FECHA DE VALIDEZ</span><span class="visible-xs-inline">EXP</span> </label>
+                                <input type="tel" class="form-control" placeholder="MM / YY" />
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label>CV CODE</label>
+                                <input type="tel" class="form-control" placeholder="CVC" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label>PROPIETARIO DE LA TARJETA</label>
+                                <input type="text" class="form-control" placeholder="Nombre de la tarjeta" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button class="btn btn-warning btn-lg btn-block">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-  
+</body>
+</html>

@@ -1,1 +1,115 @@
-<p>carrito works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+    <style>
+        body {
+            background-image: url("../../../assets/fondo.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container px-3 my-5 clearfix">
+    <div class="card">
+        <div class="card-header">
+            <h2>Carrito de compra</h2>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered m-0">
+                    <thead>
+                    <tr>
+                        <th class="text-center py-3 px-4" style="min-width: 400px;">Nombre de Producto</th>
+                        <th class="text-right py-3 px-4" style="width: 100px;">Precio</th>
+                        <th class="text-center py-3 px-4" style="width: 120px;">Personas</th>
+                        <th class="text-right py-3 px-4" style="width: 100px;">Total</th>
+                        <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#" class="shop-tooltip float-none text-light" title="" data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <td class="p-4">
+                            <div class="media align-items-center">
+                                <img src="../../../assets/image2.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                                <div class="media-body">
+                                    <a href="#" class="d-block text-dark"> Tour de exploración por Tailandia</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$500.00</td>
+                        <td class="align-middle p-4"><input type="text" class="form-control text-center" value="2"></td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$1000.00</td>
+                        <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="p-4">
+                            <div class="media align-items-center">
+                                <img src="../../../assets/servicios/image3.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                                <div class="media-body">
+                                    <a href="#" class="d-block text-dark">Aventura en los Alpes Suizos</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$300.00</td>
+                        <td class="align-middle p-4"><input type="text" class="form-control text-center" value="1"></td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$300.00</td>
+                        <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                    </tr>
+
+                    <tr>
+                        <td class="p-4">
+                            <div class="media align-items-center">
+                                <img src="../../../assets/image4.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                                <div class="media-body">
+                                    <a href="#" class="d-block text-dark">Descubre las maravillas de Nueva Zelanda</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$800.00</td>
+                        <td class="align-middle p-4"><input type="text" class="form-control text-center" value="1"></td>
+                        <td class="text-right font-weight-semibold align-middle p-4">$800.00</td>
+                        <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
+                <div class="mt-4">
+                    <label class="text-muted font-weight-normal">Codigo Promocional</label>
+                    <input type="text" placeholder="ABC" class="form-control">
+                </div>
+                <div class="d-flex">
+
+                    <div class="text-right mt-4">
+                        <label class="text-muted font-weight-normal m-0">Precio Total</label>
+                        <div class="text-large"><strong>$2100.00</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="float-right">
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Volver a la tienda</button>
+                    <button routerLink="/pago" type="button" class="btn btn-lg btn-primary mt-2">Realizar pago</button>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

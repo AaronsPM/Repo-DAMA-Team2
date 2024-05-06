@@ -8,11 +8,12 @@ import { ProductosComponent } from './component/productos/productos.component';
 import { CatalogoComponent } from './component/catalogo/catalogo.component';
 import { PayComponent } from './component/pay/pay.component';
 import { RegisterComponent } from './component/register/register.component';
+import { CarritoComponent } from './component/carrito/carrito.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, NavbarComponent, ContactoComponent, HomeComponent, LoginComponent, ProductosComponent, CatalogoComponent, PayComponent, RegisterComponent],
+  imports: [RouterOutlet, RouterLink, NavbarComponent, ContactoComponent, HomeComponent, LoginComponent, ProductosComponent, CatalogoComponent, CarritoComponent, PayComponent, RegisterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
