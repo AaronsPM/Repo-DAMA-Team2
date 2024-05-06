@@ -1,6 +1,18 @@
-.navbar ul {
-    margin: 0;
+.navbar {
     padding: 0;
+    position: fixed;
+    margin-top: 4%;
+    background-color: #e21313;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 35px;
     display: flex;
     list-style: none;
     align-items: center;
@@ -8,6 +20,7 @@
   .navbar li {
     position: relative;
   }
+
   
   .navbar a,
   .navbar a:focus {

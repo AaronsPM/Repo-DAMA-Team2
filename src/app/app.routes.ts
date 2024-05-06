@@ -5,6 +5,7 @@
     import { CatalogoComponent } from './component/catalogo/catalogo.component';
     import { LoginComponent } from './component/login/login.component';
     import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AboutUsComponent } from './component/about-us/about-us.component';
 import { RegisterComponent } from './component/register/register.component';
 
     export const routes: Routes = [
@@ -14,6 +15,7 @@ import { RegisterComponent } from './component/register/register.component';
         { path: 'registro', component: RegisterComponent },
         { path: 'catalogo', component: CatalogoComponent},
         { path: 'inicio', component: LoginComponent},
+        { path: 'about-us', component: AboutUsComponent},
         { path: '', redirectTo: '/home', pathMatch: 'full'},
         { path: '**', component: PageNotFoundComponent}
     ];
