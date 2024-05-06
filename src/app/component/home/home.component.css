@@ -3,6 +3,7 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow: hidden;
 }
 body {
 	margin: 0;
@@ -26,19 +27,7 @@ body {
 #info-extra {
 	margin-top: 8%;
 }
-.content {
-	width: 80%;
-	height: 100%;
-	padding: 15% 0;
-}
-.content h1 {
-	font-size: 30px;
-	text-transform: uppercase;
-}
-.content p {
-	font-size: 23px;
-	line-height: 40px;
-}
+
 #header {
     margin: auto;
 }
@@ -62,6 +51,7 @@ body {
 	font-weight: bold;
 }
 .container {
+	margin: auto;
 	border-radius: 30px;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;

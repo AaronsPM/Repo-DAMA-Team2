@@ -2,11 +2,17 @@
     padding: 0;
     position: fixed;
     margin-top: 4%;
+    background-color: #e21313;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
   
   .navbar ul {
     margin: 0;
-    padding: 0;
+    padding-left: 0;
+    padding-right: 35px;
     display: flex;
     list-style: none;
     align-items: center;
