@@ -8,37 +8,37 @@
   
 </head>
 <body>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>GlobalTourism</h2>
-        <p class="description">¡Bienvenidos a GlobalTourism! Somos Carlos, Nicho, Sergi y Aaron, un equipo dedicado a hacer que tus aventuras sean inolvidables. Desde destinos exóticos hasta emocionantes actividades al aire libre, estamos aquí para planificar cada detalle y capturar cada momento. Confía en nosotros para hacer de tu próximo viaje una experiencia única y memorable.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="./assets/logo_global.jpg" alt="Equipo de trabajo" class="img-fluid logo">
-      </div>
-    </div>
-    <div class="row mt-5">
-      <div class="col-md-12">
-        <h2 class="title">Contacto</h2>
-        <form action="#" method="POST">
-          <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary send-button">Enviar</button>
+  <div class="container-contact100">
+    <div class="wrap-contact100 loading">
+        <form class="contact100-form validate-form loading">
+            <span class="contact100-form-title">
+                ¡NUESTRO CONTACTO!
+            </span>
+
+            <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                <input class="input100" type="text" name="name" placeholder="Nombre" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Please enter email: e@a.x">
+                <input class="input100" type="text" name="email" placeholder="Correo electronico" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Please enter your message">
+                <textarea class="input100" name="message" placeholder="Tu mensaje:" required></textarea>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <button class="contact100-form-btn">
+                    Enviar
+                </button>
+            </div>
         </form>
-      </div>
+
     </div>
-  </div>
+</div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
