@@ -50,6 +50,10 @@ body {
 	font-family: Poetsen One;
 	font-size: 50px;
 	font-weight: bold;
+	color:#ffffff;
+	text-shadow: 3px 4px 0px black;
+
+
 }
 .container {
 	margin: auto;
@@ -65,8 +69,8 @@ body {
 }
 
 .slide img{
-	height: 70vh;
-	width: 100vh;
+	height: 75vh;
+	width: 135vh;
 }
 #redes-sociales{
 	margin-top: 3em;
@@ -145,8 +149,9 @@ body {
 	font-size: 50px;
 	font-weight: bold;
 	margin-top: 5%;
-	background-color: #007BFF;
 }
 #best-sellers h2 {
 	right: -38%;
+	color:#fcfcfc;
+	text-shadow: 3px 4px 0px black;
 }
