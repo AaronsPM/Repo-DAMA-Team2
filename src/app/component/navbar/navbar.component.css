@@ -4,19 +4,9 @@
     top: 0;
     left: 0;
     background-color: #af71d9;
-<<<<<<< HEAD
     border-radius: 15px;
     width: 100%;
 }
-=======
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    margin-left: 5%;
-  }
->>>>>>> 4a4fb0d4b26bf87ed857fc2717d4d9da3414dd32
-  
   .navbar ul {
     margin: 0;
     padding-left: 0;
