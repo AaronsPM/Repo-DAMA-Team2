@@ -6,13 +6,13 @@
     <title>Detalles del pago</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
-body {
-    background-image: url('../../../assets/fondo.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-    
+        body {
+            background-image: url('../../../assets/fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Calibri, sans-serif;
+        }
+        
         body, html {
             height: 100%;
             margin: 0;
@@ -28,7 +28,8 @@ body {
 
         .panel {
             max-width: 400px; 
-            margin-right: 20px; 
+            margin-right: 20px;
+            border-radius: 0;
         }
         .cc-img {
             margin: 0 auto;
@@ -50,9 +51,9 @@ body {
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="form-group">
-                                <label>TARJETA DE CREDITO</label>
+                                <label>TARJETA DE CRÉDITO</label>
                                 <div class="input-group">
-                                    <input type="tel" class="form-control" placeholder="Numero de tarjeta" />
+                                    <input type="tel" class="form-control" placeholder="Número de tarjeta" />
                                     <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
                                 </div>
                             </div>
@@ -67,7 +68,7 @@ body {
                         </div>
                         <div class="col-xs-5 col-md-5 pull-right">
                             <div class="form-group">
-                                <label>CV CODE</label>
+                                <label>CÓDIGO CVV</label>
                                 <input type="tel" class="form-control" placeholder="CVC" />
                             </div>
                         </div>
