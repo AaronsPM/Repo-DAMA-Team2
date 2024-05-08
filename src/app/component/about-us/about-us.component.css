@@ -26,13 +26,7 @@ body {
 	font-size: 50px;
 	font-weight: bold;
 }
-.container {
-	border-radius: 30px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
+
 .container h2 {
 	font-family: Ubuntu;
 	font-size: 37px;
