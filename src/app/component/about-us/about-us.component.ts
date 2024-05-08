@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-carrito',
+  selector: 'app-about-us',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './carrito.component.html',
-  styleUrl: './carrito.component.css'
+  templateUrl: './about-us.component.html',
+  styleUrl: './about-us.component.css'
 })
-export class CarritoComponent {
+export class AboutUsComponent {
 
 }
