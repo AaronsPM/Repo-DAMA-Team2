@@ -2,7 +2,7 @@
 
 
 body {
-	font-family: montserrat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -22,12 +22,12 @@ body {
 }
 
 #about-us-title {
-	font-family: Ubuntu;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 50px;
 	font-weight: bold;
 }
 
 .container h2 {
-	font-family: Ubuntu;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 37px;
 }
