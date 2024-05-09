@@ -10,6 +10,11 @@ section {
     background-position: center;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+  }
+
 .card {
     background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg);
     background-size: cover;
