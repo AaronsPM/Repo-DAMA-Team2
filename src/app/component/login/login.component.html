@@ -15,6 +15,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      font-family: Calibri, sans-serif;
     }
     .centered-elements .form-check-label {
       margin-left: 0;
@@ -22,12 +23,15 @@
     .separate-button {
       margin-bottom: 10px;
     }
+    .card {
+      border-radius: 0;
+    }
   </style>
 </head>
 <body>
 
   <section class="min-vh-100 d-flex justify-content-center align-items-center background-image">
-    <div class="card shadow-lg p-4" style="border-radius: 1rem;">
+    <div class="card shadow-lg p-4">
       <h3 class="text-center mb-5">Inicia Sesión</h3>
   
       <form>
@@ -48,12 +52,6 @@
           <p class="text-center mb-0">
             ¿No tienes cuenta? <a href="/registro">Regístrate aquí</a>
           </p>
-          
-          
-          
-          
-
-
         </div>
   
         <hr class="my-4">
@@ -64,8 +62,6 @@
         <a href="https://www.facebook.com" target="_blank" class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998; margin-left: 5px;">
           <i class="fab fa-facebook-f me-2"></i> Inicia sesión con Facebook
         </a>
-        
-        
       </form>
     </div>
   </section>
