@@ -6,6 +6,7 @@
     <title>Detalles del pago</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
+        
         body {
             background-image: url('../../../assets/fondo.jpg');
             background-size: cover;
@@ -26,10 +27,18 @@
             height: 100vh;
         }
 
+        .radio-group input[class="but"] {
+            margin-left: 40px;
+        margin-right: 40px;
+    }
+    .radio-group input[class="btn"] {
+            margin-left: 30px;
+
+    }
         .panel {
             max-width: 400px; 
             margin-right: 20px;
-            border-radius: 0;
+            
         }
         .cc-img {
             margin: 0 auto;
@@ -41,13 +50,44 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <div class="row">
-                    <h3 class="text-center">Detalles del pago</h3>
-                    <img class="img-responsive cc-img" src="https://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                    <div class="col-xs-12">
+                        <h3 class="text-center">Detalles del pago</h3>
+                        <img class="img-responsive cc-img" src="https://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                    </div>
                 </div>
             </div>
             <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="radio-group">
+                            <!-- Primer input de radio -->
+                            <input type="radio" id="pago1" name="formaPago" value="pago1" class="but"> 
+                            <!-- Segundo input de radio -->
+                            <input type="radio" id="pago2" name="formaPago" value="pago2" class="but"> 
+                            <!-- Tercer input de radio -->
+                            <input type="radio" id="pago3" name="formaPago" value="pago3" class="but"> 
+                            <!-- Cuarto input de radio -->
+                            <input type="radio" id="pago4" name="formaPago" value="pago4" class="btn" style="margin-top: -10px;">  
+                        </div>
+                    </div>
+                </div>
+
+    
+                
+
+
+    
+
+
+ 
+    
+
+
+
+    
               
                 <form role="form">
+                    
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="form-group">
