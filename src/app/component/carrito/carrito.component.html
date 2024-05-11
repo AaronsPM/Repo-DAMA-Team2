@@ -5,22 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compra</title>
     <style>
-            .btn-primary {
-    background-color: #ffa66f;
-}
         body {
             background-image: url("../../../assets/fondo.jpg");
             background-size: cover;
             background-position: center;
-            display: flex;
             font-family: Calibri, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-
-        
-        
-
+        .container {
+            margin-top: 50px; 
+        }
+        .card {
+            margin-bottom: 30px; 
+        }
+        .panel {
+            max-width: 400px; 
+            margin: 0 auto;
+        }
+        .cc-img {
+            margin: 0 auto;
+        }
+        .but {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .btt {
+            margin-left: 30px;
+        }
     </style>
-
 </head>
 <body>
 
@@ -109,11 +122,77 @@
             <div class="float-right">
                 <div class="d-flex justify-content-between">
                     <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Volver a la tienda</button>
-                    <button routerLink="/pago" type="button" class="btn btn-lg btn-primary mt-2">Realizar pago</button>
+                    <button routerLink="/pago" type="button" class="btn btn-lg btn-primary mt-2" style="background-color: #ffa66f;">Realizar pago</button>
+
                 </div>
             </div>
-            
+        </div>
+    </div>
+</div>
 
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="text-center">Detalles del pago</h3>
+                    <img class="img-responsive cc-img" src="https://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="radio-group">
+                        <input type="radio" id="pago1" name="formaPago" value="pago1" class="but"> 
+                        <input type="radio" id="pago2" name="formaPago" value="pago2" class="but"> 
+                        <input type="radio" id="pago3" name="formaPago" value="pago3" class="but"> 
+                        <input type="radio" id="pago4" name="formaPago" value="pago4" class="btt" style="margin-top: -10px;">  
+                    </div>
+                </div>
+            </div>
+            <form role="form">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label>TARJETA DE CRÉDITO</label>
+                            <div class="input-group">
+                                <input type="tel" class="form-control" placeholder="Número de tarjeta" />
+                                <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-7 col-md-7">
+                        <div class="form-group">
+                            <label><span class="hidden-xs">FECHA DE VALIDEZ</span><span class="visible-xs-inline">EXP</span> </label>
+                            <input type="tel" class="form-control" placeholder="MM / YY" />
+                        </div>
+                    </div>
+                    <div class="col-xs-5 col-md-5 pull-right">
+                        <div class="form-group">
+                            <label>CÓDIGO CVV</label>
+                            <input type="tel" class="form-control" placeholder="CVC" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label>PROPIETARIO DE LA TARJETA</label>
+                            <input type="text" class="form-control" placeholder="Nombre de la tarjeta" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-warning btn-lg btn-block">Pagar</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
