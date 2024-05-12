@@ -22,6 +22,7 @@ import { PokemonComponent } from './component/pokemon/pokemon.component';
         { path: 'catalogo', component: CatalogoComponent},
         { path: 'inicio', component: LoginComponent},
         { path: 'about-us', component: AboutUsComponent},
+        { path: 'pokemon', component: PokemonComponent},
         { path: '', redirectTo: '/home', pathMatch: 'full'},
         { path: '**', component: PageNotFoundComponent}
     ];

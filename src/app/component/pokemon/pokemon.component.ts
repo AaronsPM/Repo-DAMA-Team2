@@ -11,7 +11,7 @@ import { Pokemon } from '../../common/pokemon';
 })
 export class PokemonComponent implements OnInit{
 
-  bdataPokemons! : Pokemon
+  bdataPokemons? : Pokemon
   constructor(private apiservice: APIServiceService){}
   ngOnInit(): void {
     this.loadPokemons();
@@ -32,4 +32,5 @@ export class PokemonComponent implements OnInit{
   }
   )    
   }
+
 }

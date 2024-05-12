@@ -14,7 +14,7 @@ import { PokemonComponent } from './component/pokemon/pokemon.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, NavbarComponent, ContactoComponent,PokemonComponent, HomeComponent, LoginComponent, ProductosComponent, CatalogoComponent, CarritoComponent, PayComponent, RegisterComponent],
+  imports: [RouterOutlet, RouterLink, NavbarComponent, ContactoComponent, PokemonComponent, HomeComponent, LoginComponent, ProductosComponent, CatalogoComponent, CarritoComponent, PayComponent, RegisterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
