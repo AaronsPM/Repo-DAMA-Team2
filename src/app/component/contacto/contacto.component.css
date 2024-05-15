@@ -174,7 +174,10 @@ iframe {
 
 .contact100-form {
     width: 100%;
+    
+    
 }
+
 
 .contact100-form-title {
     display: block;
@@ -192,7 +195,7 @@ iframe {
     position: relative;
     background-color: #fff;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .wrap-contact100 {
@@ -265,8 +268,10 @@ textarea.input100 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 43px;
+    padding-top: 2px;
+    padding-bottom: 13px;
+    
+    
 }
 
 .contact100-form-btn {
@@ -277,7 +282,7 @@ textarea.input100 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 2px;
     min-width: 160px;
     height: 42px;
     background-color: #bd59d4;
