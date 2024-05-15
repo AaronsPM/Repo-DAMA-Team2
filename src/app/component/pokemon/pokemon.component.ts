@@ -1,36 +1,33 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common'; 
 import { APIServiceService } from '../../data/apiservice.service';
 import { Pokemon } from '../../common/pokemon';
 
 @Component({
   selector: 'app-pokemon',
   standalone: true,
-  imports: [],
+  imports: [CommonModule], 
   templateUrl: './pokemon.component.html',
-  styleUrl: './pokemon.component.css'
+  styleUrls: ['./pokemon.component.css']
 })
-export class PokemonComponent implements OnInit{
 
-  bdataPokemons? : Pokemon
-  constructor(private apiservice: APIServiceService){}
+export class PokemonComponent implements OnInit {
+  pokemons: any[] = [];
+
+  constructor(private apiservice: APIServiceService) {}
+
   ngOnInit(): void {
-    this.loadPokemons();
+    this.apiservice.GetPokemons()
+      .subscribe((response: any) => {
+        (response.results as { name: string }[]).forEach(result => {
+          this.apiservice.GetMoreData(result.name)
+            .subscribe((uniqResponse: any) => {
+              this.pokemons.push(uniqResponse);
+              console.log(this.pokemons);
+            });
+        });
+      });
   }
-  loadPokemons(){
-    this.apiservice.GetPokemons().subscribe(
-      {
-      next: (data) => {
-        this.bdataPokemons = data
-        console.log(data)
-    },
-    error: err => {
-      console.log(err)
-    },
-    complete: () => {
-      console.log('completed')
-    }
-  }
-  )    
-  }
-
+  
+  
 }
