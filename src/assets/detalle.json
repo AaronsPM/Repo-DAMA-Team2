@@ -1,63 +1,72 @@
 [
-    {
-      "title": "Crucero por el Mediterráneo",
-      "price": "120 euros por persona",
-      "image": "./assets/servicios/image1.jpg",
-      "description": "Un viaje increíble por el Mediterráneo."
-    },
-    {
-      "title": "Tour de exploración por Tailandia",
-      "price": "500 euros por persona",
-      "image": "./assets/servicios/image2.jpg",
-      "description": "Descubre la belleza de Tailandia."
-    },
-    {
-      "title": "Aventura en los Alpes Suizos",
-      "price": "300 euros por persona",
-      "image": "./assets/servicios/image3.jpg",
-      "description": "Una emocionante aventura en los Alpes."
-    },
-    {
-      "title": "Descubre las maravillas de Nueva Zelanda",
-      "price": "800 euros por persona",
-      "image": "./assets/servicios/image4.jpg",
-      "description": "Explora los paisajes de Nueva Zelanda."
-    },
-    {
-      "title": "Viaje por las islas del Caribe",
-      "price": "250 euros por persona",
-      "image": "./assets/servicios/image5.jpg",
-      "description": "Relájate en las islas del Caribe."
-    },
-    {
-      "title": "Expedición a la selva amazónica",
-      "price": "600 euros por persona",
-      "image": "./assets/servicios/image6.jpg",
-      "description": "Una expedición emocionante en el Amazonas."
-    },
-    {
-      "title": "Recorrido por las ciudades europeas",
-      "price": "450 euros por persona",
-      "image": "./assets/servicios/image7.jpg",
-      "description": "Conoce las ciudades más bellas de Europa."
-    },
-    {
-      "title": "Safari por África",
-      "price": "1000 euros por persona",
-      "image": "./assets/servicios/image8.jpg",
-      "description": "Un safari inolvidable en África."
-    },
-    {
-      "title": "Descubre la cultura japonesa",
-      "price": "700 euros por persona",
-      "image": "./assets/servicios/image9.jpg",
-      "description": "Sumérgete en la cultura japonesa."
-    },
-    {
-      "title": "Explora las ruinas mayas",
-      "price": "400 euros por persona",
-      "image": "./assets/servicios/image10.jpg",
-      "description": "Explora las antiguas ruinas mayas."
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Crucero por el Mediterráneo",
+    "price": "120 euros por persona",
+    "imageUrl": "assets/servicios/image1.jpg",
+    "description": "Un viaje increíble por el Mediterráneo."
+  },
+  {
+    "id": 2,
+    "title": "Tour de exploración por Tailandia",
+    "price": "500 euros por persona",
+    "imageUrl": "assets/servicios/image2.jpg",
+    "description": "Descubre la belleza de Tailandia."
+  },
+  {
+    "id": 3,
+    "title": "Aventura en los Alpes Suizos",
+    "price": "300 euros por persona",
+    "imageUrl": "assets/servicios/image3.jpg",
+    "description": "Una emocionante aventura en los Alpes."
+  },
+  {
+    "id": 4,
+    "title": "Descubre las maravillas de Nueva Zelanda",
+    "price": "800 euros por persona",
+    "imageUrl": "assets/servicios/image4.jpg",
+    "description": "Explora los paisajes de Nueva Zelanda."
+  },
+  {
+    "id": 5,
+    "title": "Viaje por las islas del Caribe",
+    "price": "250 euros por persona",
+    "imageUrl": "assets/servicios/image5.jpg",
+    "description": "Relájate en las islas del Caribe."
+  },
+  {
+    "id": 6,
+    "title": "Expedición a la selva amazónica",
+    "price": "600 euros por persona",
+    "imageUrl": "assets/servicios/image6.jpg",
+    "description": "Una expedición emocionante en el Amazonas."
+  },
+  {
+    "id": 7,
+    "title": "Recorrido por las ciudades europeas",
+    "price": "450 euros por persona",
+    "imageUrl": "assets/servicios/image7.jpg",
+    "description": "Conoce las ciudades más bellas de Europa."
+  },
+  {
+    "id": 8,
+    "title": "Safari por África",
+    "price": "1000 euros por persona",
+    "imageUrl": "assets/servicios/image8.jpg",
+    "description": "Un safari inolvidable en África."
+  },
+  {
+    "id": 9,
+    "title": "Descubre la cultura japonesa",
+    "price": "700 euros por persona",
+    "imageUrl": "assets/servicios/image9.jpg",
+    "description": "Sumérgete en la cultura japonesa."
+  },
+  {
+    "id": 10,
+    "title": "Explora las ruinas mayas",
+    "price": "400 euros por persona",
+    "imageUrl": "assets/servicios/image10.jpg",
+    "description": "Explora las antiguas ruinas mayas."
+  }
+]

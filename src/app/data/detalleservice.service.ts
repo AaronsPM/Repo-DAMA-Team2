@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { Producto } from '../common/producto';
 
 @Injectable({
@@ -12,7 +12,13 @@ export class DetalleserviceService {
 
   constructor(private http: HttpClient) { }
 
-  getDetalle(): Observable<Producto[]> { 
-    return this.http.get<Producto[]>(this.jsonUrl); 
+  getAllDetalles(): Observable<Producto[]> {
+    return this.http.get<Producto[]>(this.jsonUrl);
+  }
+
+  getDetalle(id: number): Observable<Producto | undefined> {
+    return this.http.get<Producto[]>(this.jsonUrl).pipe(
+      map((productos: Producto[]) => productos.find(producto => producto.id === id))
+    );
   }
 }

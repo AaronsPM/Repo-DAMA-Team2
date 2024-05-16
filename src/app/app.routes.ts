@@ -24,7 +24,7 @@ import { DetalleComponent } from './component/detalle/detalle.component';
         { path: 'inicio', component: LoginComponent},
         { path: 'about-us', component: AboutUsComponent},
         { path: 'pokemon', component: PokemonComponent},
-        { path: 'detalles', component: DetalleComponent},
+        { path: 'detalles/:id', component: DetalleComponent},
         { path: '', redirectTo: '/home', pathMatch: 'full'},
         { path: '**', component: PageNotFoundComponent}
     ];
