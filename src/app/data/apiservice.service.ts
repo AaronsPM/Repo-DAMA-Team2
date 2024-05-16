@@ -7,11 +7,12 @@ import { Pokemon } from '../common/pokemon';
   providedIn: 'root'
 })
 export class APIServiceService {
+  private baseUrl: string = 'https://pokeapi.co/api/v2/pokemon';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  GetPokemons(): Observable<any> {
-    return this.http.get('https://pokeapi.co/api/v2/pokemon?limit=100000')
+  GetPokemons(offset: number = 0, limit: number = 20): Observable<any> {
+    return this.http.get(`${this.baseUrl}?offset=${offset}&limit=${limit}`)
       .pipe(
         catchError(error => {
           console.error('Error fetching Pokemons:', error);
@@ -21,10 +22,20 @@ export class APIServiceService {
   }
 
   GetMoreData(name: string): Observable<any> {
-    return this.http.get(`https://pokeapi.co/api/v2/pokemon/${name}`)
+    return this.http.get(`${this.baseUrl}/${name}`)
       .pipe(
         catchError(error => {
           console.error(`Error fetching data for Pokemon ${name}:`, error);
+          return of({});
+        })
+      );
+  }
+  
+  GetPage(pageUrl: string): Observable<any> {
+    return this.http.get(pageUrl)
+      .pipe(
+        catchError(error => {
+          console.error(`Error fetching data from ${pageUrl}:`, error);
           return of({});
         })
       );
