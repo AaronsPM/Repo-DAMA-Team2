@@ -1,4 +1,4 @@
-<div class="row">
+<body><div class="row">
     <div class="col-md-4" *ngIf="producto">
       <div class="card mb-3">
         <img class="card-img-top" [src]="producto.imageUrl" [alt]="producto.description">
@@ -6,7 +6,9 @@
           <h5 class="card-title">{{ producto.name }}</h5>
           <p class="card-text">{{ producto.description }}</p>
           <p class="card-text">Precio: {{ producto.price }}</p>
-          <p class="card-text">ID: {{ producto.id }}</p>
+          <div class="container">
+          <button routerLink="/carrito" class="btn btn-success">Comprar ahora</button>
+        </div>
         </div>
       </div>
     </div>
@@ -14,3 +16,5 @@
       <p>Producto no encontrado.</p>
     </div>
   </div>
+
+

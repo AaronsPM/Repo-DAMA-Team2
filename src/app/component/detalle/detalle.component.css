@@ -1,0 +1,19 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+  }
+.card{
+    margin-top: 40%;
+  }
+
+.btn-success {
+    background-color:#ff8800;
+    margin-left: 61%;
+}

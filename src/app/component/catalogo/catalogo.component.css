@@ -1,7 +1,8 @@
 body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg) no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {

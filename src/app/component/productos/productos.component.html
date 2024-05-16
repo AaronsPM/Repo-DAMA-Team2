@@ -13,7 +13,9 @@
   
   <section class="py-5"> 
     <div class="container">
-      <h2 class="mb-4" style="margin-top: 50px; font-size: 50px;">Nuestros Servicios:</h2>
+      <div class="container" id="Servicio-titulo">
+        <h2 class="mb-5" id="info-extra-title">Nuestros Servicios: </h2>
+      </div>
       <div class="row">  </div>      
           <div class="card mb-3" style="width: 1120px; height: auto;">
           <div class="row no-gutters">
@@ -27,7 +29,7 @@
                 <p class="card-text">Explora Europa en un viaje en tren lleno de encanto y diversidad cultural. Disfruta de paisajes cambiantes, ciudades históricas y experiencias auténticas mientras te desplazas cómodamente por este continente lleno de historia y belleza.
 </p>
                 <p class="card-text"><small class="text-muted">Precio: €450</small></p>
-                <button class="btn btn-primary ver-mas" onclick="openDetails('detalle_europa.html')">Ver más</button>
+                <button class="btn btn-primary ver-mas" [routerLink]="['/detalles/7']" onclick="openDetails('detalle_europa.html')">Ver más</button>
               </div>
             </div>
         </div>
@@ -43,7 +45,7 @@
                 <p class="card-text">Explora la cautivadora belleza y la rica cultura de Japón en un viaje inolvidable. Sumérgete en la elegancia de sus templos antiguos, la serenidad de sus jardines zen y la modernidad de sus bulliciosas ciudades, mientras descubres la fascinante mezcla de tradición y tecnología.
                 </p>
                 <p class="card-text"><small class="text-muted">Precio: €700</small></p>
-                <button class="btn btn-primary ver-mas">Ver más</button>
+                <button class="btn btn-primary ver-mas" [routerLink]="['/detalles/9']" onclick="openDetails('detalle_europa.html')">Ver más</button>
               </div>
             </div>
             </div>
@@ -59,7 +61,7 @@
                 <p class="card-text">
                   Embárcate en un emocionante safari por África y sumérgete en la belleza salvaje de la naturaleza. Descubre la majestuosidad de la vida silvestre, desde los majestuosos leones hasta las elegantes jirafas, mientras exploras los impresionantes paisajes de la sabana africana.</p>
                 <p class="card-text"><small class="text-muted">Precio: €1000</small></p>
-                <button class="btn btn-primary ver-mas">Ver más</button>
+                <button class="btn btn-primary ver-mas" [routerLink]="['/detalles/8']" onclick="openDetails('detalle_europa.html')">Ver más</button>
               </div>
             </div>
             </div>
@@ -74,7 +76,7 @@
                   <h5 class="card-title">¡Descubre el mediterráneo!</h5>
                   <p class="card-text">Embárcate en un inolvidable viaje explorando las costas del Mediterráneo. Sumérgete en la rica historia, descubre sus encantadores pueblos costeros y maravíllate con las impresionantes vistas mientras disfrutas de una experiencia única llena de aventuras.</p>
                   <p class="card-text"><small class="text-muted">Precio: €120</small></p>
-                  <button class="btn btn-primary ver-mas">Ver más</button>
+                  <button class="btn btn-primary ver-mas" [routerLink]="['/detalles/1']" onclick="openDetails('detalle_europa.html')">Ver más</button>
                 </div>
               </div>
               </div>
@@ -92,7 +94,7 @@
                       
                       </p>
                     <p class="card-text"><small class="text-muted">Precio: €300</small></p>
-                    <button class="btn btn-primary ver-mas">Ver más</button>
+                    <button class="btn btn-primary ver-mas" [routerLink]="['/detalles/4']" onclick="openDetails('detalle_europa.html')">Ver más</button>
                   </div>
                 </div>
                 </div>
@@ -107,7 +109,7 @@
                       <h5 class="card-title">Expedicion a la AMAZONIA</h5>
                       <p class="card-text">Adéntrate en la selva amazónica en una aventura fascinante. Descubre la biodiversidad única, observa la vida salvaje en su hábitat natural y explora las maravillas naturales de este vasto ecosistema, hogar de una riqueza incomparable.</p>
                       <p class="card-text"><small class="text-muted">Precio: €600</small></p>
-                      <button class="btn btn-primary ver-mas">Ver más</button>
+                      <button class="btn btn-primary ver-mas" [routerLink]="['/detalles/6']" onclick="openDetails('detalle_europa.html')">Ver más</button>
                     </div>
                   </div>
                   </div>
@@ -120,7 +122,9 @@
 
 <section class="bg-light py-5">
   <div class="container">
-    <h2 class="mb-4">Otros Servicios: Alquila nuestros coches para una experiencia única e intensa. </h2>
+    <div class="container" id="Servicio-titulo">
+      <h2 class="mb-5" id="info-extra-title">Nuestros Coches: </h2>
+    </div>    
     <div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card">
