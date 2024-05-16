@@ -1,16 +1,21 @@
-<div class="row">
-    <div class="col-md-4" *ngIf="producto">
-      <div class="card mb-3">
-        <img class="card-img-top" [src]="producto.imageUrl" [alt]="producto.description">
-        <div class="card-body">
-          <h5 class="card-title">{{ producto.name }}</h5>
-          <p class="card-text">{{ producto.description }}</p>
-          <p class="card-text">Precio: {{ producto.price }}</p>
-          <p class="card-text">ID: {{ producto.id }}</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4" *ngIf="!producto">
-      <p>Producto no encontrado.</p>
-    </div>
-  </div>
+<html>
+    <body>
+        <div class="row">
+            <div class="col-md-4" *ngIf="producto">
+              <div class="card mb-3">
+                <img class="card-img-top" [src]="producto.imageUrl" [alt]="producto.description">
+                <div class="card-body">
+                  <h5 class="card-title">{{ producto.name }}</h5>
+                  <p class="card-text">{{ producto.description }}</p>
+                  <p class="card-text">Precio: {{ producto.price }}</p>
+                  <p class="card-text">ID: {{ producto.id }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" *ngIf="!producto">
+              <p>Producto no encontrado.</p>
+            </div>
+          </div>
+    </body>
+</html>
+
