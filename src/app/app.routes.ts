@@ -10,6 +10,7 @@ import { RegisterComponent } from './component/register/register.component';
 import { PayComponent } from './component/pay/pay.component';
 import { CarritoComponent } from './component/carrito/carrito.component';
 import { PokemonComponent } from './component/pokemon/pokemon.component';
+import { DetalleComponent } from './component/detalle/detalle.component';
 
     export const routes: Routes = [
         { path: 'home', component: HomeComponent},
@@ -23,6 +24,7 @@ import { PokemonComponent } from './component/pokemon/pokemon.component';
         { path: 'inicio', component: LoginComponent},
         { path: 'about-us', component: AboutUsComponent},
         { path: 'pokemon', component: PokemonComponent},
+        { path: 'detalles', component: DetalleComponent},
         { path: '', redirectTo: '/home', pathMatch: 'full'},
         { path: '**', component: PageNotFoundComponent}
     ];

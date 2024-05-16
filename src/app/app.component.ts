@@ -10,11 +10,13 @@ import { PayComponent } from './component/pay/pay.component';
 import { RegisterComponent } from './component/register/register.component';
 import { CarritoComponent } from './component/carrito/carrito.component';
 import { PokemonComponent } from './component/pokemon/pokemon.component';
+import { DetalleComponent } from './component/detalle/detalle.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, NavbarComponent, ContactoComponent, PokemonComponent, HomeComponent, LoginComponent, ProductosComponent, CatalogoComponent, CarritoComponent, PayComponent, RegisterComponent],
+  imports: [RouterOutlet, CommonModule, RouterLink, NavbarComponent, ContactoComponent, PokemonComponent, HomeComponent, LoginComponent, ProductosComponent, CatalogoComponent, CarritoComponent, PayComponent, RegisterComponent, DetalleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

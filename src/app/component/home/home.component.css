@@ -52,8 +52,14 @@ body {
 	font-weight: bold;
 	color:#ffffff;
 	text-shadow: 3px 4px 0px black;
-
-
+}
+#home-title {
+	position: relative;
+	font-family: Poetsen One;
+	font-size: 50px;
+	font-weight: bold;
+	color:#ffffff;
+	text-shadow: 3px 4px 0px black;
 }
 .container {
 	margin: auto;
