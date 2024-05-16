@@ -1,23 +1,31 @@
 <div class="card-grid" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem;">
-  <div *ngFor="let pokemon of pokemons"  class="card" style="width: 18rem;">
+  <div *ngFor="let pokemon of pokemons" class="card" style="width: 18rem;">
     <img [src]="pokemon.sprites.front_default" class="card-img-top" alt="Pokemon">
     <div class="card-body">
       <h5 class="card-title">{{pokemon.name}}</h5>
-      <p class="card-text">
-      </p>
+      <p class="card-text"></p>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item"><b>Type: </b>{{pokemon.types[0].type.name}}<br></li>
-      <li class="list-group-item"> <b>Height: </b>{{pokemon.height}}<br></li>
-      <li class="list-group-item"><b>Health: </b>{{pokemon.height}}</li>
-
+      <li class="list-group-item"><b>Height: </b>{{pokemon.height}}<br></li>
+      <li class="list-group-item"><b>Health: </b>{{pokemon.stats[0].base_stat}}</li>
     </ul>
-   
   </div>
 </div>
 
-
-
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item" [class.disabled]="offset === 0">
+      <a class="page-link" (click)="prevPage()">Previous</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link">{{ offset / limit + 1 }}</a>
+    </li>
+    <li class="page-item" [class.disabled]="offset + limit >= totalPokemons">
+      <a class="page-link" (click)="nextPage()">Next</a>
+    </li>
+  </ul>
+</nav>
 
 
 
