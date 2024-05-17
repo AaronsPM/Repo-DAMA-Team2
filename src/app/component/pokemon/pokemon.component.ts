@@ -11,6 +11,7 @@ import { APIServiceService } from '../../data/apiservice.service';
 })
 export class PokemonComponent implements OnInit {
   pokemons: any[] = [];
+  randomPokemon: any = null;
   offset: number = 0;
   limit: number = 40;
   totalPokemons: number = 0; 
@@ -34,6 +35,22 @@ export class PokemonComponent implements OnInit {
             });
         });
       });
+  }
+
+  loadRandomPokemon(): void {
+    const randomId = Math.floor(Math.random() * 898) + 1; // Asumiendo que hay 898 Pokémon
+    this.apiservice.GetPokemonById(randomId).subscribe({
+      next: (data) => {
+        this.randomPokemon = data;
+        console.log(this.randomPokemon);
+      },
+      error: err => {
+        console.log(err);
+      },
+      complete: () => {
+        console.log('Random Pokemon load completed');
+      }
+    });
   }
 
   nextPage(): void {

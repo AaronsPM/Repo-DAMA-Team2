@@ -8,29 +8,50 @@
           <p class="card-text"></p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>Type: </b>{{pokemon.types[0].type.name}}<br></li>
-          <li class="list-group-item"><b>Height: </b>{{pokemon.height}}<br></li>
-          <li class="list-group-item"><b>Health: </b>{{pokemon.stats[0].base_stat}}</li>
+          <li class="list-group-item"><b>Tipo: </b>{{pokemon.types[0].type.name}}<br></li>
+          <li class="list-group-item"><b>Altura: </b>{{pokemon.height}}<br></li>
+          <li class="list-group-item"><b>Vida: </b>{{pokemon.stats[0].base_stat}}</li>
         </ul>
       </div>
     </div>
   </div>
 
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item" [class.disabled]="offset === 0">
-      <a class="page-link" (click)="prevPage()">Previous</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link">{{ offset / limit + 1 }}</a>
-    </li>
-    <li class="page-item" [class.disabled]="offset + limit >= totalPokemons">
-      <a class="page-link" (click)="nextPage()">Next</a>
-    </li>
-  </ul>
-</nav>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="offset === 0">
+        <a class="page-link" (click)="prevPage()">Previous</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link">{{ offset / limit + 1 }}</a>
+      </li>
+      <li class="page-item" [class.disabled]="offset + limit >= totalPokemons">
+        <a class="page-link" (click)="nextPage()">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h5 class="tituloRandom">¡GENERA UN POKEMON Y CONSIGUE TU RECOMPENSA!</h5>
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="row text-center">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <button (click)="loadRandomPokemon()" class="btn btn-primary mb-4">Cargar Pokémon Aleatorio</button>
+
+            <div *ngIf="randomPokemon">
+              <h5 class="card-title">{{ randomPokemon.name }}</h5>
+              <img [src]="randomPokemon.sprites.front_default" class="card-img-top" alt="{{ randomPokemon.name }}">
+            </div>
+          </div>
+          <ul class="list-group list-group-flush" *ngIf="randomPokemon">
+            <li class="list-group-item"><b>Tipo: </b>{{ randomPokemon.types[0].type.name }}<br></li>
+            <li class="list-group-item"><b>Altura: </b>{{ randomPokemon.height }}<br></li>
+            <li class="list-group-item"><b>Vida: </b>{{ randomPokemon.stats[0].base_stat }}</li>
+            <li class="list-group-item"><b>Oferta: </b>10%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
-
-
-

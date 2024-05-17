@@ -40,4 +40,14 @@ export class APIServiceService {
         })
       );
   }
+  GetPokemonById(id: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/${id}`)
+      .pipe(
+        catchError(error => {
+          console.error(`Error fetching data for Pokemon with ID ${id}:`, error);
+          return of({});
+        })
+      );
+  }
 }
+
