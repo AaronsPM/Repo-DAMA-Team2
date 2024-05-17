@@ -1,7 +1,8 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg) no-repeat center center fixed;
+    background: url(https://i.postimg.cc/jq7x420Z/fondo.jpg);
     background-size: cover;
+    background-position: center;
   }
   
   .row {
@@ -10,7 +11,7 @@ body {
     align-items: center;     
   }
 .card{
-    margin-top: 40%;
+    margin-top: 25%;
   }
 
 .btn-success {
